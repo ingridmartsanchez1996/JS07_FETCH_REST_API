@@ -1,3 +1,10 @@
+/////////////////// EJERCICIOS
+// - Arreglar el pokemon en localStorage
+// - Manipular el DOM y agregar una tarjeta del pokemon.
+// - El tamaño e info de la tarjeta es a consideración personal.
+// - La tarjeta debe mantenerse en la pantalla.
+// - La info -> LocalStorage -> Fetch
+
 const BASE_URL = 'https://pokeapi.co/api/v2/';
 
 
@@ -16,15 +23,6 @@ const upsertPokemonCard = (pokeData) => {
     let pokeCardElement = document.getElementById("poke-card");
     pokeCardElement.classList.remove('container','poke-card');
     pokeCardElement.classList.add('container','poke-card');
-
-
-
-    // // Check if the div already has the class
-    // if (!pokeCardElement.contains("poke-card")) {
-    //     // Add the class if it hasn't been added
-    //     // pokeCardElement.classList.add("container", "poke-card");
-    // }
-
 
     let cardPokeNameElement = document.getElementById('card-poke-name');
     let cardPokeIDElement = document.getElementById('card-poke-id');
@@ -74,28 +72,3 @@ document.getElementById('next-btn')
         localStorage.setItem('currentPokeId', newId);
         upsertPokemonCard(pokemon);
     })
-
-
-
-// ////////////////// POST ////////////////////////////
-
-// fetch('https://jsonplaceholder.typicode.com/posts', {
-//     method: 'POST',
-//     body: JSON.stringify({
-//         title: 'title1',
-//         body: 'Lorem ipsum dolor sit amet',
-//         userId: 1,
-//     }),
-//     headers: {
-//         'Content-type': 'application/json; charset=UTF-8',
-//     }
-// }).then(res => res.json())
-//     .then(json => console.log(json))
-
-
-/////////////////// EJERCICIOS
-// - Arreglar el pokemon en localStorage
-// - Manipular el DOM y agregar una tarjeta del pokemon.
-// - El tamaño e info de la tarjeta es a consideración personal.
-// - La tarjeta debe mantenerse en la pantalla.
-// - La info -> LocalStorage -> Fetch
