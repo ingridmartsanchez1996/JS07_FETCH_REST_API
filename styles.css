@@ -1,0 +1,90 @@
+body {
+    margin: 0;
+    font-family: 'Karla', sans-serif;
+    background-color: #14141c;
+    color: white;
+    text-align: center;
+    padding: 40px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #1a1b26;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.row {
+    margin: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+    padding: 20px;
+    width: 100%;
+}
+
+.btn {
+    background-color: #fa6400;
+    border: 0px solid transparent;
+    border-radius: .25rem;
+    cursor: pointer;
+    font-family: system-ui, -apple-system, system-ui, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 10px 20px;
+    min-width: 110px;
+}
+
+.btn:hover,
+.btn:focus {
+    background-color: #fb8332;
+    box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+}
+
+/* Style the container for the Pokemon card */
+.poke-card {
+    background-color: #f3f3f3;
+    border: 2px solid #e1e1e1;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    width: 200px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    margin: 0 auto;
+    margin-top: 50px;
+    width: 30%;
+    border-radius: 25px;
+    background: linear-gradient(#9198e5);
+
+    
+    /* Center the card horizontally and vertically */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Style the Pokemon name */
+  #card-poke-name {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  /* Style the Pokemon ID */
+  #card-poke-id {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 5px;
+  }
+  
+  /* Style the Pokemon weight */
+  #card-poke-weight {
+    font-size: 16px;
+    color: #777;
+  }
